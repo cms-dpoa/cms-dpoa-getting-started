@@ -11,6 +11,11 @@ html:
   use_repository_button     : true  # Whether to add a link to your repository button
   use_issues_button         : true  # Whether to add an "open an issue" button
   home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
+  
+repository:
+  url                       : https://github.com/cms-dpoa/cms-dpoa-getting-started  # The URL to your book's repository
+  path_to_book              : ""  # A path to your book's folder, relative to the repository root.
+  branch                    : "master"  # Which branch of the repository should be used when creating links
 #######################################################################################
 # Advanced and power-user settings
 sphinx:
