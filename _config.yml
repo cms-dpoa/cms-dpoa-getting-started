@@ -1,5 +1,5 @@
 title                       : "Getting started in DPOA"
-author                      : Kati Lassila-Perini, NN  # The author of the book
+author                      : CMS DPOA team  # The author of the book
 logo                        : logo.png
 execute:
   execute_notebooks: "off"
