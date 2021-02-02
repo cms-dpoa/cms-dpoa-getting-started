@@ -1,0 +1,14 @@
+title                       : "Getting started in DPOA"
+author                      : Kati Lassila-Perini, NN  # The author of the book
+logo                        : logo.png
+execute:
+  execute_notebooks: "off"
+
+#######################################################################################
+# Advanced and power-user settings
+sphinx:
+
+  # A list of extra extensions to load by Sphinx (added to those already used by JB).
+  config:
+      html_show_copyright: false
+      language: en

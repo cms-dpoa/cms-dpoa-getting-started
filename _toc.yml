@@ -1,0 +1,34 @@
+# In _toc.yml
+- file: intro.md 
+
+- part: DPOA activities
+  chapters: 
+  - file: dpoa/what-is-dpoa.md
+  - file: dpoa/your-project.md
+
+- part: Computing tools
+  chapters:
+  - file: computing/basic-computing-tools.md
+    sections:
+    - file: computing/basic/unix-bash.md
+    - file: computing/basic/python.md
+    - file: computing/basic/git.md
+  - file: computing/more-computing-tools.md
+    sections:
+    - file: computing/more/docker.md
+    - file: computing/more/unit-tests.md
+    - file: computing/more/kubernetes.md
+
+- part: Release preparations
+  chapters:
+  - file: releases/open-data-releases.md
+
+- part: Open data in use
+  chapters:
+  - file: use-od/open-data-examples.md
+  - file: use-od/open-data-guide.md
+ 
+- part: Reproducible workflows
+  chapters: 
+  - file: repro/containers.md
+  - file: repro/workflows.md
