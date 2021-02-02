@@ -3,6 +3,24 @@ author                      : Kati Lassila-Perini, NN  # The author of the book
 logo                        : logo.png
 execute:
   execute_notebooks: "off"
+#######################################################################################
+# HTML-specific settings
+html:
+  favicon                   : logo.png  # A path to a favicon image
+  use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
+  use_repository_button     : true  # Whether to add a link to your repository button
+  use_issues_button         : true  # Whether to add an "open an issue" button
+  extra_navbar              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  #Will be displayed underneath the left navbar.
+  extra_footer              : |
+    <div>
+    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="license" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY 4.0.</a>
+    </div>    
+  google_analytics_id       : ""  # A GA id that can be used to track book views.
+  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
+  baseurl                   : "https://cms-dpoa.github.io/cms-dpoa-getting-started/intro.html"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  comments:
+    hypothesis              : false
+    utterances              : false
 
 #######################################################################################
 # Advanced and power-user settings
