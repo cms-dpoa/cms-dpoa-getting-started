@@ -2,7 +2,16 @@ title                       : "Getting started in DPOA"
 author                      : CMS DPOA team  # The author of the book
 logo                        : logo.png
 execute:
-  execute_notebooks: "off"
+  execute_notebooks: "off"  
+#######################################################################################
+# Parse and render settings
+parse:
+  myst_extended_syntax      : true  # enable MyST extended syntax support (see documents for details)
+  myst_url_schemes          : [mailto, http, https]  # URI schemes that will be recognised as external URLs in Markdown links
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - html_image
 #######################################################################################
 # HTML-specific settings
 html:
