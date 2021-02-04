@@ -11,5 +11,5 @@ The key activities of the group are
 - developing a legacy data format for Run1 (2010--2012) data comparable to the "NanoAOD" data format in use since Run2.
 
 <img src="/images/DPOA-group.png" alt="DPOA group activities"
-	title="DPOA group activities" style="vertical-align:middle" />
+	title="DPOA group activities" style="horizontal-align:middle" />
 
