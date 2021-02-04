@@ -6,6 +6,8 @@ We develop and promote measures to ensure preservation and reusability of data (
 The key activities of the group are
 - tools to improve analysis reusability and reproducibility
 - development of the CMS interface to [the CERN analysis preservation platform (CAP)](https://analysispreservation.cern.ch/)
-- preparing regular data release through [the CERN open data portal](http://opendata.cern.ch/)
-- providing documentation and examples for open data users
+- preparing regular data releases through [the CERN open data portal](http://opendata.cern.ch/)
+- providing documentation and examples for using CMS open data
 - developing a legacy data format for Run1 (2010--2012) data comparable to the "NanoAOD" data format in use since Run2.
+
+![DPOA group activities](/images/DPOA-group.png)
