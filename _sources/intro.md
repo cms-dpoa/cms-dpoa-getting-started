@@ -10,6 +10,7 @@ The tutorial material on computing tools comes mainly from the following excelle
 - [the HEP software foundation tutorials](https://hepsoftwarefoundation.org/training/curriculum) (CC BY 4.0)
 - [The Missing Semester of Your CS Education from MIT]( https://missing.csail.mit.edu/) (CC BY-NC-SA 4.0)
 - [CMS + ATLAS analysis preservation bootcamp, February 2020](https://awesome-workshop.github.io/2020-02-17-analysis-preservation-bootcamp/) (CC BY 4.0)
+- [CMS open data workshop, October 2020](https://cms-opendata-workshop.github.io/2020-09-30-cms-open-data-workshop-for-theorists/#schedule) (CC BY 4.0)
 
 
 ## Personal induction project
