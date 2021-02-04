@@ -5,6 +5,6 @@ Prerequisites:
 
 To do: 
 - for Python basics: [https://swcarpentry.github.io/python-novice-inflammation/](https://swcarpentry.github.io/python-novice-inflammation/)
-- notebook examples handy on this jupyter book (example to be added)
-- learn also how to run python scripts on linux terminal and not only in a notebook or an IDE [https://realpython.com/run-python-scripts/](https://realpython.com/run-python-scripts/)
+- jupyter notebook examples can be directly launched from this jupyter book (example to be added)
+- if you have mostly used python on jupyter notebooks or on PyCharm (or on other IDEs), make sure to learn how to run python scripts on linux terminal [https://realpython.com/run-python-scripts/](https://realpython.com/run-python-scripts/)
 
