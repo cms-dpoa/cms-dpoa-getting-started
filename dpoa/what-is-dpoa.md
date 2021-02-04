@@ -10,4 +10,6 @@ The key activities of the group are
 - providing documentation and examples for using CMS open data
 - developing a legacy data format for Run1 (2010--2012) data comparable to the "NanoAOD" data format in use since Run2.
 
-![DPOA group activities](/images/DPOA-group.png)
+<img src="//images/DPOA-group.png" alt="DPOA group activities"
+	title="DPOA group activities" style="vertical-align:middle" />
+
