@@ -1,12 +1,15 @@
 # Getting started in CMS DPOA
 
-Welcome to the Data preservation and open access (DPOA) project in the CMS experiment! If you are new to the project, these pages guide you through some tutorial material that you may find useful in your work. It also lists the entry points to get started with different DPOA-related tasks. 
+Welcome to the Data preservation and open access (DPOA) group in the CMS experiment! 
+
+If you are new to the group, these pages guide you through some tutorial material that you may find useful in your work. It also lists the entry points to get started with different DPOA-related tasks. 
 
 ## Tutorial material
 
-The tutorial material on computing tools comes mainly from two excellent sources:
+The tutorial material on computing tools comes mainly from the following excellent sources:
 - [the HEP software foundation tutorials](https://hepsoftwarefoundation.org/training/curriculum) (CC BY 4.0)
 - [The Missing Semester of Your CS Education from MIT]( https://missing.csail.mit.edu/) (CC BY-NC-SA 4.0)
+- [CMS + ATLAS analysis preservation bootcamp, February 2020](https://awesome-workshop.github.io/2020-02-17-analysis-preservation-bootcamp/) (CC BY 4.0)
 
 
 ## Personal induction project
