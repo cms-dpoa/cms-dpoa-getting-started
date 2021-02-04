@@ -1,8 +1,8 @@
 # Unix command line
 
 Prerequisites:
-- make sure that a linux terminal is available, at least one of
-  - on a local linux OS
+- make sure that a linux terminal is available, at least one of the following
+  - your own linux OS
   - WSL 2 linux installation on Windows 10
   - lxplus (CERN registration needed)
  
