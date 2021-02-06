@@ -3,7 +3,7 @@
 Prerequisites:
 - make sure that a linux terminal is available, at least one of the following
   - your own linux OS
-  - WSL 2 linux installation on Windows 10
+  - WSL 2 linux installation on Windows 10 [Guide to instalation](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
   - lxplus (CERN registration needed)
  
 To do: 
