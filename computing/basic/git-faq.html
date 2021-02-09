@@ -352,10 +352,12 @@
 <h2>What you mostly need<a class="headerlink" href="#what-you-mostly-need" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="n">my</span><span class="o">-</span><span class="n">updates</span>
 <span class="c1">#do you edits</span>
-<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="n">m</span> <span class="s1">&#39;describe my updates&#39;</span>
+<span class="n">git</span> <span class="n">add</span> <span class="n">youreditedfile</span> <span class="n">anotheredititedfile</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s1">&#39;describe my updates&#39;</span>
 <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">my</span><span class="o">-</span><span class="n">updates</span>
 </pre></div>
 </div>
+<p>In the repository, you will not use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add.</span></code> to add all changed files, because it includes the html files that you do not need to push. They will be automatically generated.</p>
 </div>
 <div class="section" id="checking-things">
 <h2>Checking things<a class="headerlink" href="#checking-things" title="Permalink to this headline">¶</a></h2>
