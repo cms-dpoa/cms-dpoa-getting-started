@@ -13,6 +13,8 @@
     - file: computing/basic/unix-bash.md
     - file: computing/basic/python.md
     - file: computing/basic/git.md
+      sections:
+      - file: computing/basic/git-faq.md
   - file: computing/more-computing-tools.md
     sections:
     - file: computing/more/docker.md
