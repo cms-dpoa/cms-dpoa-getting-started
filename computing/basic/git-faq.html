@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kubernetes, minikube &#8212; Getting started in DPOA</title>
+    <title>Git FAQ &#8212; Getting started in DPOA</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -55,8 +55,8 @@
     <link rel="shortcut icon" href="../../_static/logo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Release preparations" href="../../releases/open-data-releases.html" />
-    <link rel="prev" title="Unit tests, CI/CD" href="unit-tests.html" />
+    <link rel="next" title="More computing tools" href="../more-computing-tools.html" />
+    <link rel="prev" title="Git basics" href="git.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -116,28 +116,28 @@
  </span>
 </p>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="../basic-computing-tools.html">
    Basic computing tools
   </a>
-  <ul class="collapse-ul">
+  <ul class="current collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../basic/unix-bash.html">
+    <a class="reference internal" href="unix-bash.html">
      Unix command line
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../basic/python.html">
+    <a class="reference internal" href="python.html">
      Python programming
     </a>
    </li>
-   <li class="toctree-l2 collapsible-parent">
-    <a class="reference internal" href="../basic/git.html">
+   <li class="toctree-l2 current active collapsible-parent">
+    <a class="reference internal" href="git.html">
      Git basics
     </a>
-    <ul class="collapse-ul">
-     <li class="toctree-l3">
-      <a class="reference internal" href="../basic/git-faq.html">
+    <ul class="current collapse-ul">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
        Git FAQ
       </a>
      </li>
@@ -149,23 +149,23 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
+ <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../more-computing-tools.html">
    More computing tools
   </a>
-  <ul class="current collapse-ul">
+  <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="docker.html">
+    <a class="reference internal" href="../more/docker.html">
      Docker
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="unit-tests.html">
+    <a class="reference internal" href="../more/unit-tests.html">
      Unit tests, CI/CD
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../more/kubernetes.html">
      Kubernetes, minikube
     </a>
    </li>
@@ -259,7 +259,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/computing/more/kubernetes.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/computing/basic/git-faq.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -279,7 +279,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/cms-dpoa/cms-dpoa-getting-started/issues/new?title=Issue%20on%20page%20%2Fcomputing/more/kubernetes.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/cms-dpoa/cms-dpoa-getting-started/issues/new?title=Issue%20on%20page%20%2Fcomputing/basic/git-faq.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -300,6 +300,40 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#when-to-clone-and-when-to-fork">
+   When to clone and when to fork
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-you-mostly-need">
+   What you mostly need
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#checking-things">
+   Checking things
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#updating">
+   Updating
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deleting-and-undoing-things">
+   Deleting and undoing things
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -307,18 +341,66 @@
         
               <div>
                 
-  <div class="section" id="kubernetes-minikube">
-<h1>Kubernetes, minikube<a class="headerlink" href="#kubernetes-minikube" title="Permalink to this headline">¶</a></h1>
-<p>Prerequisites</p>
-<ul class="simple">
-<li><p>linux terminal</p></li>
-<li><p>docker desktop</p></li>
-</ul>
-<p>To do:</p>
-<ul class="simple">
-<li><p>install minikube: <a class="reference external" href="https://minikube.sigs.k8s.io/docs/">https://minikube.sigs.k8s.io/docs/</a></p></li>
-<li><p>run one of the OD examples</p></li>
-</ul>
+  <div class="section" id="git-faq">
+<h1>Git FAQ<a class="headerlink" href="#git-faq" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="when-to-clone-and-when-to-fork">
+<h2>When to clone and when to fork<a class="headerlink" href="#when-to-clone-and-when-to-fork" title="Permalink to this headline">¶</a></h2>
+<p>If you mainly make small and quick changes to the project, you can clone the original repository locally, make your updates to a new branch of your own, test them locally, and then push that branch to the original repository.</p>
+<p>If you make bigger changes that you need to keep safe before pushing them to the original repository, you can fork the original repository to have a version of it of your own. You would work on your own fork, and when done, push your updates to the origin.</p>
+</div>
+<div class="section" id="what-you-mostly-need">
+<h2>What you mostly need<a class="headerlink" href="#what-you-mostly-need" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="n">my</span><span class="o">-</span><span class="n">updates</span>
+<span class="c1">#do you edits</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="n">m</span> <span class="s1">&#39;describe my updates&#39;</span>
+<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">my</span><span class="o">-</span><span class="n">updates</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="checking-things">
+<h2>Checking things<a class="headerlink" href="#checking-things" title="Permalink to this headline">¶</a></h2>
+<p>Check the origin of your git repository (where your updates go when you push)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="o">-</span><span class="n">v</span>
+</pre></div>
+</div>
+<p>Output for this repository</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">origin</span>  <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">cms</span><span class="o">-</span><span class="n">dpoa</span><span class="o">/</span><span class="n">cms</span><span class="o">-</span><span class="n">dpoa</span><span class="o">-</span><span class="n">getting</span><span class="o">-</span><span class="n">started</span><span class="o">.</span><span class="n">git</span> <span class="p">(</span><span class="n">fetch</span><span class="p">)</span>
+<span class="n">origin</span>  <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">cms</span><span class="o">-</span><span class="n">dpoa</span><span class="o">/</span><span class="n">cms</span><span class="o">-</span><span class="n">dpoa</span><span class="o">-</span><span class="n">getting</span><span class="o">-</span><span class="n">started</span><span class="o">.</span><span class="n">git</span> <span class="p">(</span><span class="n">push</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Check your branch</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span>
+</pre></div>
+</div>
+<p>Check your local updates (all of this gets committed if you do git add -a -m “my updates”)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">status</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="updating">
+<h2>Updating<a class="headerlink" href="#updating" title="Permalink to this headline">¶</a></h2>
+<p>Update your local master from the original repository (e.g. before starting a new local branch)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>
+<span class="n">git</span> <span class="n">pull</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="deleting-and-undoing-things">
+<h2>Deleting and undoing things<a class="headerlink" href="#deleting-and-undoing-things" title="Permalink to this headline">¶</a></h2>
+<p>Delete a branch (or force with -D if it hasn’t been merged yet and you really want to get rid of it), first change to the master branch</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>
+<span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">d</span> <span class="o">&lt;</span><span class="n">branch</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Remove a file from your list of updates (added by <code class="docutils literal notranslate"><span class="pre">add</span></code>)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">reset</span> <span class="n">filename</span>
+</pre></div>
+</div>
+<p>Wrong files in your commit? Undo the last commit with</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">soft</span> <span class="n">HEAD</span><span class="o">~</span><span class="mi">1</span>
+</pre></div>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -334,7 +416,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./computing/more"
+            path: "./computing/basic"
         },
         predefinedOutput: true
     }
@@ -349,8 +431,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="unit-tests.html" title="previous page">Unit tests, CI/CD</a>
-    <a class='right-next' id="next-link" href="../../releases/open-data-releases.html" title="next page">Release preparations</a>
+    <a class='left-prev' id="prev-link" href="git.html" title="previous page">Git basics</a>
+    <a class='right-next' id="next-link" href="../more-computing-tools.html" title="next page">More computing tools</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
