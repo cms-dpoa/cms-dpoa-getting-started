@@ -11,10 +11,12 @@ If you make bigger changes that you need to keep safe before pushing them to the
 ```
 git checkout -b my-updates
 #do you edits
-git commit -a -m 'describe my updates'
+git add youreditedfile anotheredititedfile
+git commit -m 'describe my updates'
 git push origin my-updates
 ```
 
+In the repository, you will not use `git add.` to add all changed files, because it includes the html files that you do not need to push. They will be automatically generated.
 
 ## Checking things
 
