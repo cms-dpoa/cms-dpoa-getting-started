@@ -175,6 +175,18 @@
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
+  Physics analysis
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../physics/briefdescription.html">
+   Brief description of a physics analysis
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
   Release preparations
  </span>
 </p>
@@ -308,8 +320,35 @@
                 
   <div class="section" id="reproducible-workflows">
 <h1>Reproducible workflows<a class="headerlink" href="#reproducible-workflows" title="Permalink to this headline">¶</a></h1>
+<p>Prerequisites:</p>
 <ul class="simple">
-<li><p>workflows</p></li>
+<li><p><a class="reference internal" href="../computing/more/docker.html"><span class="doc std std-doc">docker</span></a></p></li>
+<li><p><a class="reference internal" href="../computing/more/kubernetes.html"><span class="doc std std-doc">local minikube environment</span></a></p></li>
+</ul>
+<p>To-do:</p>
+<ul class="simple">
+<li><p>Have a look at a simplified, but typical physics analysis workflow consisting of two phases</p>
+<ul>
+<li><p>first writing the original datasets to a smaller format: <a class="reference external" href="http://opendata.cern.ch/record/12340">producer</a></p></li>
+<li><p>then running the actual analysis on this smaller format: <a class="reference external" href="http://opendata.cern.ch/record/12350">analyzer</a> (no need to worry about the details of the physics description)</p></li>
+</ul>
+</li>
+<li><p>Have a look how an automated test run of the first part is implemented as <a class="reference external" href="https://github.com/cms-opendata-analyses/AOD2NanoAODOutreachTool/blob/master/.github/workflows/main.yml">a GitHub action workflow</a></p>
+<ul>
+<li><p>What is needed is the container (with the sw installed) where the job is run, and the commands which are passed in <a class="reference external" href="https://github.com/cms-opendata-analyses/AOD2NanoAODOutreachTool/blob/master/commands.sh">a script</a> <a class="reference external" href="https://github.com/cms-opendata-analyses/AOD2NanoAODOutreachTool/blob/master/.github/workflows/main.yml#L20">here</a></p></li>
+<li><p>you can read  <a class="reference external" href="https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions">the introduction to github actions</a>, but no need to go in details now</p></li>
+</ul>
+</li>
+<li><p>To put together different steps in analysis, workflow engines will be used. This can be done in a kubernetes cluster using <a class="reference external" href="https://argoproj.github.io/projects/argo/">argo workflow</a></p>
+<ul>
+<li><p>try the single-step example above using argo in your local minikube environment:</p>
+<ul>
+<li><p>you need these two files <a class="reference external" href="https://github.com/cms-opendata-analyses/AOD2NanoAODOutreachTool/blob/master/volumes.yaml">volumes.yaml</a> and <a class="reference external" href="https://github.com/cms-opendata-analyses/AOD2NanoAODOutreachTool/blob/master/argo-workflow.yaml">argo-workflow.yaml</a></p></li>
+<li><p>see the commands needed after <code class="docutils literal notranslate"><span class="pre">run:</span></code> statements <a class="reference external" href="https://github.com/cms-opendata-analyses/AOD2NanoAODOutreachTool/blob/master/.github/workflows/main_argo.yml">here</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 
