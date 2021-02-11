@@ -21,6 +21,10 @@
     - file: computing/more/unit-tests.md
     - file: computing/more/kubernetes.md
 
+- part: Physics analysis
+  chapters:
+  - file: physics/briefdescription.md
+  
 - part: Release preparations
   chapters:
   - file: releases/open-data-releases.md
