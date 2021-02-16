@@ -24,6 +24,11 @@
 - part: Physics analysis
   chapters:
   - file: physics/briefdescription.md
+
+- part: CERN Open Data portal
+  chapters:
+  - file: codp/finding-things.md
+  - file: codp/contributing.md
   
 - part: Release preparations
   chapters:
