@@ -15,6 +15,7 @@
     - file: computing/basic/git.md
       sections:
       - file: computing/basic/git-faq.md
+      - file: computing/basic/git-exercise.md
   - file: computing/more-computing-tools.md
     sections:
     - file: computing/more/docker.md
