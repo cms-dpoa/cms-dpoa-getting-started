@@ -1,7 +1,7 @@
 # Git Exercise
 
 Follow these instructions to add a new file or to update a file:
-1.  add a shh key for git authentication (needed to upload your changes) following [the instructions link](./computing/basic/git.html)
+1.  add a shh key for git authentication (needed to upload your changes) following the link in {doc}`../computing/basic/git`
 2.  in your Linux terminal, git clone this repository `git clone git@github.com:cms-dpoa/cms-dpoa-getting-started.git`
 3. change to  the `cms-dpoa-getting-started` directory in your local area
 4. if  `pip` is not yet installed (check if it exists with `which pip` or `which pip3`), install `pip` following the instructions in https://linuxize.com/post/how-to-install-pip-on-ubuntu-20.04/
