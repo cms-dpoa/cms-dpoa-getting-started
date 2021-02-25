@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unix command line &#8212; Getting started in DPOA</title>
+    <title>Git Exercise &#8212; Getting started in DPOA</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -55,8 +55,8 @@
     <link rel="shortcut icon" href="../../_static/logo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Python programming" href="python.html" />
-    <link rel="prev" title="Basic computing tools" href="../basic-computing-tools.html" />
+    <link rel="next" title="More computing tools" href="../more-computing-tools.html" />
+    <link rel="prev" title="Git FAQ" href="git-faq.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -121,8 +121,8 @@
    Basic computing tools
   </a>
   <ul class="current collapse-ul">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="unix-bash.html">
      Unix command line
     </a>
    </li>
@@ -131,18 +131,18 @@
      Python programming
     </a>
    </li>
-   <li class="toctree-l2 collapsible-parent">
+   <li class="toctree-l2 current active collapsible-parent">
     <a class="reference internal" href="git.html">
      Git basics
     </a>
-    <ul class="collapse-ul">
+    <ul class="current collapse-ul">
      <li class="toctree-l3">
       <a class="reference internal" href="git-faq.html">
        Git FAQ
       </a>
      </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="git-exercise.html">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
        Git Exercise
       </a>
      </li>
@@ -293,7 +293,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/computing/basic/unix-bash.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/computing/basic/git-exercise.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -313,7 +313,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/cms-dpoa/cms-dpoa-getting-started/issues/new?title=Issue%20on%20page%20%2Fcomputing/basic/unix-bash.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/cms-dpoa/cms-dpoa-getting-started/issues/new?title=Issue%20on%20page%20%2Fcomputing/basic/git-exercise.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -341,33 +341,27 @@
         
               <div>
                 
-  <div class="section" id="unix-command-line">
-<h1>Unix command line<a class="headerlink" href="#unix-command-line" title="Permalink to this headline">¶</a></h1>
-<p>Prerequisites:</p>
-<ul class="simple">
-<li><p>make sure that a linux terminal is available, at least one of the following</p>
-<ul>
-<li><p>your own linux OS</p></li>
-<li><p>WSL 2 linux installation on Windows 10 <a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Guide to instalation</a></p></li>
-<li><p>lxplus (CERN registration needed)</p></li>
-</ul>
-</li>
-</ul>
-<p>To do:</p>
-<ul class="simple">
-<li><p>go through</p>
-<ul>
-<li><p>Unix shell and bash scripts: <a class="reference external" href="http://swcarpentry.github.io/shell-novice/">http://swcarpentry.github.io/shell-novice/</a> or <a class="reference external" href="https://missing.csail.mit.edu/2020/course-shell/">https://missing.csail.mit.edu/2020/course-shell/</a> + <a class="reference external" href="https://missing.csail.mit.edu/2020/shell-tools/">https://missing.csail.mit.edu/2020/shell-tools/</a></p></li>
-</ul>
-</li>
-<li><p>some editors basics</p>
-<ul>
-<li><p><a class="reference external" href="https://missing.csail.mit.edu/2020/editors/">https://missing.csail.mit.edu/2020/editors/</a> running in terminal</p></li>
-<li><p>VS Code</p></li>
-<li><p>…</p></li>
-</ul>
-</li>
-</ul>
+  <div class="section" id="git-exercise">
+<h1>Git Exercise<a class="headerlink" href="#git-exercise" title="Permalink to this headline">¶</a></h1>
+<p>Follow these instructions to add a new file or to update a file:</p>
+<ol class="simple">
+<li><p>add a shh key for git authentication (needed to upload your changes) following the instruction linked there</p></li>
+<li><p>in your Linux terminal, git clone this repository <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">git&#64;github.com:cms-dpoa/cms-dpoa-getting-started.git</span></code></p></li>
+<li><p>change to  the <code class="docutils literal notranslate"><span class="pre">cms-dpoa-getting-started</span></code> directory in your local area</p></li>
+<li><p>if  <code class="docutils literal notranslate"><span class="pre">pip</span></code> is not yet installed (check if it exists with <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">pip</span></code> or <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">pip3</span></code>), install <code class="docutils literal notranslate"><span class="pre">pip</span></code> following the instructions in https://linuxize.com/post/how-to-install-pip-on-ubuntu-20.04/</p></li>
+<li><p>check the messages, you may need to add a directory to your PATH variable with <code class="docutils literal notranslate"><span class="pre">PATH=&quot;$PATH:$HOME/.local/bin&quot;</span></code> so that the installed program can be found</p></li>
+<li><p>run  <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code> (or <code class="docutils literal notranslate"><span class="pre">pip3</span></code>)</p></li>
+<li><p>remove files in the existing <code class="docutils literal notranslate"><span class="pre">_build/html</span></code> directory</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">.</span></code></p></li>
+<li><p>Check your local build in your browser: if you use WSL 2 linux, you can find it in <code class="docutils literal notranslate"><span class="pre">file:///C:/Users/[USER]/[YOUR-DIRECTORY]/dpoa-getting-started/_build/html/intro.html</span></code></p></li>
+<li><p>make a new branch <code class="docutils literal notranslate"><span class="pre">yourname-updates</span></code> or a name of your choice in your local area with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">yourname-updates</span></code></p></li>
+<li><p>either update an existing file or make a new file with new content and add its name to <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code></p></li>
+<li><p>build the book again and check changes</p></li>
+<li><p>add the changes to git in your local area with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">/your_new_file.md</span> <span class="pre">_toc.yml</span></code> in case you added a new file or with
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">/your_updated_file.md</span></code> and commit them <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;Updated</span> <span class="pre">instructions&quot;</span></code></p></li>
+<li><p>push the changes of your branch to the original github repository with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">yourname-updates</span></code></p></li>
+<li><p>you’ll see a message for your updated branch in the github web interface https://github.com/cms-dpoa/cms-dpoa-getting-started, you can make a pull request to merge your branch</p></li>
+</ol>
 </div>
 
     <script type="text/x-thebe-config">
@@ -398,8 +392,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../basic-computing-tools.html" title="previous page">Basic computing tools</a>
-    <a class='right-next' id="next-link" href="python.html" title="next page">Python programming</a>
+    <a class='left-prev' id="prev-link" href="git-faq.html" title="previous page">Git FAQ</a>
+    <a class='right-next' id="next-link" href="../more-computing-tools.html" title="next page">More computing tools</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
