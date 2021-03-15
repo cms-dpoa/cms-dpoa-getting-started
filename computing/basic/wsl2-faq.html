@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unit tests, CI/CD &#8212; Getting started in DPOA</title>
+    <title>WSL2 Tips &#8212; Getting started in DPOA</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -55,8 +55,8 @@
     <link rel="shortcut icon" href="../../_static/logo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Kubernetes, minikube" href="kubernetes.html" />
-    <link rel="prev" title="Docker" href="docker.html" />
+    <link rel="next" title="Python programming" href="python.html" />
+    <link rel="prev" title="Unix command line" href="unix-bash.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -116,18 +116,18 @@
  </span>
 </p>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="../basic-computing-tools.html">
    Basic computing tools
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2 collapsible-parent">
-    <a class="reference internal" href="../basic/unix-bash.html">
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active collapsible-parent">
+    <a class="reference internal" href="unix-bash.html">
      Unix command line
     </a>
-    <ul class="collapse-ul">
-     <li class="toctree-l3">
-      <a class="reference internal" href="../basic/wsl2-faq.html">
+    <ul class="current collapse-ul">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
        WSL2 Tips
       </a>
      </li>
@@ -136,22 +136,22 @@
     </i>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../basic/python.html">
+    <a class="reference internal" href="python.html">
      Python programming
     </a>
    </li>
    <li class="toctree-l2 collapsible-parent">
-    <a class="reference internal" href="../basic/git.html">
+    <a class="reference internal" href="git.html">
      Git basics
     </a>
     <ul class="collapse-ul">
      <li class="toctree-l3">
-      <a class="reference internal" href="../basic/git-faq.html">
+      <a class="reference internal" href="git-faq.html">
        Git FAQ
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../basic/git-exercise.html">
+      <a class="reference internal" href="git-exercise.html">
        Git Exercise
       </a>
      </li>
@@ -163,23 +163,23 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
+ <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../more-computing-tools.html">
    More computing tools
   </a>
-  <ul class="current collapse-ul">
+  <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="docker.html">
+    <a class="reference internal" href="../more/docker.html">
      Docker
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../more/unit-tests.html">
      Unit tests, CI/CD
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="kubernetes.html">
+    <a class="reference internal" href="../more/kubernetes.html">
      Kubernetes, minikube
     </a>
    </li>
@@ -302,7 +302,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/computing/more/unit-tests.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/computing/basic/wsl2-faq.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -322,7 +322,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/cms-dpoa/cms-dpoa-getting-started/issues/new?title=Issue%20on%20page%20%2Fcomputing/more/unit-tests.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/cms-dpoa/cms-dpoa-getting-started/issues/new?title=Issue%20on%20page%20%2Fcomputing/basic/wsl2-faq.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -351,19 +351,27 @@
         
               <div>
                 
-  <div class="section" id="unit-tests-ci-cd">
-<h1>Unit tests, CI/CD<a class="headerlink" href="#unit-tests-ci-cd" title="Permalink to this headline">¶</a></h1>
-<p>Prerequisites</p>
+  <div class="section" id="wsl2-tips">
+<h1>WSL2 Tips<a class="headerlink" href="#wsl2-tips" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p><a class="reference internal" href="../basic/unix-bash.html"><span class="doc std std-doc">unix basics</span></a></p></li>
-<li><p><a class="reference internal" href="../basic/git.html"><span class="doc std std-doc">git basics</span></a></p></li>
-<li><p><a class="reference internal" href="docker.html"><span class="doc std std-doc">docker basics</span></a></p></li>
-<li><p><a class="reference internal" href="../../physics/briefdescription.html"><span class="doc std std-doc">physics analysis overview</span></a></p></li>
+<li><p>Make sure the Windows version is up to date.</p></li>
+<li><p>Make sure all drivers are also up to date and installed; By going through</p>
+<ol class="simple">
+<li><p>Settings</p></li>
+<li><p>Update and security</p></li>
+<li><p>View additional Options</p></li>
+<li><p>install and update ALL drivers that are listed.</p></li>
+</ol>
+</li>
+<li><p>When (if) joining the “Windows Insider Program” I found that it’s best to choose the “developer” option (which will be the top/first option) instead of the “recommended” option (which will be the second option on the list).</p></li>
+<li><p>Make sure to enable Virtual Machine Feature from BIOS on start up before entering the ” <code class="docutils literal notranslate"><span class="pre">dism.exe</span> <span class="pre">/online</span> <span class="pre">/enable-feature</span> <span class="pre">/featurename:VirtualMachinePlatform</span> <span class="pre">/all</span> <span class="pre">/norestart</span> </code>” command on PowerShell.</p></li>
+<li><p>It’s best to install the “ARM64 package” that includes (“wsl_update_arm64” and “wsl_update_x64”) after making sure all updates are completed and the PC is rebooted.</p></li>
+<li><p>Make sure to have “Ubuntu 20.04 LTS” and register on it</p>
+<ul>
+<li><p><strong>Disclaimer</strong>: if you’re using Ubuntu for the first time you might think that you’re not typing anything while entering your password upon registration; while in fact it’s just invisible, after entering password the first time press “Enter” in order to confirm password.</p></li>
 </ul>
-<p>To do:</p>
-<ul class="simple">
-<li><p>go through <a class="reference external" href="https://awesome-workshop.github.io/continuous-integration-deployment-gitlab/">the GitLab CI/CD tutorial</a></p></li>
-<li><p>go through <a class="reference external" href="https://hsf-training.github.io/hsf-training-cicd-github/">the GitHub CI/CD tutorial</a></p></li>
+</li>
+<li><p>Last but not least make sure you’re running PowerShell/CMD as an administrator before entering any command.</p></li>
 </ul>
 </div>
 
@@ -380,7 +388,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./computing/more"
+            path: "./computing/basic"
         },
         predefinedOutput: true
     }
@@ -392,8 +400,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="docker.html" title="previous page">Docker</a>
-    <a class='right-next' id="next-link" href="kubernetes.html" title="next page">Kubernetes, minikube</a>
+    <a class='left-prev' id="prev-link" href="unix-bash.html" title="previous page">Unix command line</a>
+    <a class='right-next' id="next-link" href="python.html" title="next page">Python programming</a>
 
         </div>
         
