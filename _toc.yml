@@ -11,6 +11,8 @@
   - file: computing/basic-computing-tools.md
     sections:
     - file: computing/basic/unix-bash.md
+      sections:
+      - file: computing/basic/wsl2-faq.md 
     - file: computing/basic/python.md
     - file: computing/basic/git.md
       sections:
