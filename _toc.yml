@@ -31,11 +31,15 @@
 - part: CERN Open Data portal
   chapters:
   - file: codp/finding-things.md
+  - file: codp/behind-the-scenes.md
   - file: codp/contributing.md
   
 - part: Release preparations
   chapters:
   - file: releases/open-data-releases.md
+  - file: releases/data-curation-tools.md
+    sections:
+    - file: releases/categorisation.md
 
 - part: Open data in use
   chapters:
