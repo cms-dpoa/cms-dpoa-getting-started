@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Release preparations &#8212; Getting started in DPOA</title>
+    <title>Data-curation tools &#8212; Getting started in DPOA</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -55,8 +55,6 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Open data examples" href="../use-od/open-data-examples.html" />
-    <link rel="prev" title="Contributing" href="../codp/contributing.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -222,9 +220,9 @@
   Release preparations
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="open-data-releases.html">
    Release preparations
   </a>
  </li>
@@ -302,7 +300,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/releases/open-data-releases.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/releases/data-curation-tools.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -322,7 +320,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/cms-dpoa/cms-dpoa-getting-started/issues/new?title=Issue%20on%20page%20%2Freleases/open-data-releases.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/cms-dpoa/cms-dpoa-getting-started/issues/new?title=Issue%20on%20page%20%2Freleases/data-curation-tools.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -351,23 +349,15 @@
         
               <div>
                 
-  <div class="section" id="release-preparations">
-<h1>Release preparations<a class="headerlink" href="#release-preparations" title="Permalink to this headline">¶</a></h1>
-<p>The CMS open data are released through <a class="reference external" href="http://opendata.cern.ch/">the CMS open data portal</a>. The preparation consists of several steps:</p>
-<p><img alt="CMS data release preparations" src="../_images/cms-release-preparations.png" /></p>
+  <div class="section" id="data-curation-tools">
+<h1>Data-curation tools<a class="headerlink" href="#data-curation-tools" title="Permalink to this headline">¶</a></h1>
+<p>The tools to prepare the open data portal records are in <a class="reference external" href="https://github.com/cernopendata/data-curation">the data-curation repository</a> in the CERN Open data GitHub area. Each experiment has specific tools and those for CMS are</p>
 <ul class="simple">
-<li><p>“Legacy” reprocessing is defined for the collision data and MC</p></li>
-<li><p>The data release is proposed for approval in the CMS Collaboration Board (CB)</p></li>
-<li><p>The datasets are transferred from their CMS storage to the open data area (eospublic at CERN)</p></li>
-<li><p>The metadata are extracted and parsed from the CMS-internal databases</p></li>
-<li><p>The condition data (needed for running the jobs) are extracted as sqlite files and stored on the cvmfs file system</p></li>
-<li><p>The computing environment (containers and VM image) is preserved and tested</p></li>
-<li><p>Auxiliar information (list of good runs, luminosity information etc) is collected</p></li>
-<li><p>Testing in the open data environment</p></li>
-<li><p>Documentation for data usage and tools.</p></li>
+<li><p>scripts to prepare the collision data records (cms-NNNN-collision-datasets)</p></li>
+<li><p>scripts to prepare the information about the triggers (event selection at data taking)</p></li>
+<li><p>scripts to prepare the simulated data records, the most relevant one being <a class="reference external" href="https://github.com/cernopendata/data-curation/tree/master/cms-YYYY-simulated-datasets">cms-YYYY-simulated-datasets</a></p></li>
 </ul>
-<p>Based on this information, the open data portal records are prepared:</p>
-<p><img alt="CODP data release preparations" src="../_images/codp-release-preparations.png" /></p>
+<p>Some of the scripts were used only for the early releases (“cod2”) and are not in use any more.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -395,8 +385,6 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../codp/contributing.html" title="previous page">Contributing</a>
-    <a class='right-next' id="next-link" href="../use-od/open-data-examples.html" title="next page">Open data examples</a>
 
         </div>
         

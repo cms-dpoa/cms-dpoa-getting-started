@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Release preparations &#8212; Getting started in DPOA</title>
+    <title>Categorisation &#8212; Getting started in DPOA</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -55,8 +55,6 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Open data examples" href="../use-od/open-data-examples.html" />
-    <link rel="prev" title="Contributing" href="../codp/contributing.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -222,9 +220,9 @@
   Release preparations
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="open-data-releases.html">
    Release preparations
   </a>
  </li>
@@ -302,7 +300,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/releases/open-data-releases.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/releases/categorisation.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -322,7 +320,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/cms-dpoa/cms-dpoa-getting-started/issues/new?title=Issue%20on%20page%20%2Freleases/open-data-releases.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/cms-dpoa/cms-dpoa-getting-started/issues/new?title=Issue%20on%20page%20%2Freleases/categorisation.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -351,23 +349,17 @@
         
               <div>
                 
-  <div class="section" id="release-preparations">
-<h1>Release preparations<a class="headerlink" href="#release-preparations" title="Permalink to this headline">¶</a></h1>
-<p>The CMS open data are released through <a class="reference external" href="http://opendata.cern.ch/">the CMS open data portal</a>. The preparation consists of several steps:</p>
-<p><img alt="CMS data release preparations" src="../_images/cms-release-preparations.png" /></p>
-<ul class="simple">
-<li><p>“Legacy” reprocessing is defined for the collision data and MC</p></li>
-<li><p>The data release is proposed for approval in the CMS Collaboration Board (CB)</p></li>
-<li><p>The datasets are transferred from their CMS storage to the open data area (eospublic at CERN)</p></li>
-<li><p>The metadata are extracted and parsed from the CMS-internal databases</p></li>
-<li><p>The condition data (needed for running the jobs) are extracted as sqlite files and stored on the cvmfs file system</p></li>
-<li><p>The computing environment (containers and VM image) is preserved and tested</p></li>
-<li><p>Auxiliar information (list of good runs, luminosity information etc) is collected</p></li>
-<li><p>Testing in the open data environment</p></li>
-<li><p>Documentation for data usage and tools.</p></li>
-</ul>
-<p>Based on this information, the open data portal records are prepared:</p>
-<p><img alt="CODP data release preparations" src="../_images/codp-release-preparations.png" /></p>
+  <div class="section" id="categorisation">
+<h1>Categorisation<a class="headerlink" href="#categorisation" title="Permalink to this headline">¶</a></h1>
+<p>To ease the search of datasets of interest in the collection of simulated data, a search tag is added to each simulated dataset. These tags describe the physics process included in each simulated dataset and they can be used for <a class="reference external" href="https://opendata.cern.ch/search?page=1&amp;size=20&amp;q=&amp;ondemand=True&amp;subcategory=Drell-Yan&amp;category=Standard%20Model%20Physics">search</a>.</p>
+<p>The category tag is defined from the dataset name with <a class="reference external" href="https://github.com/cernopendata/data-curation/blob/master/cms-YYYY-simulated-datasets/code/categorisation.py">the categorisation script</a>.</p>
+<p>It can be run stand-alone (without other steps of the metadata preparation and without access to CMS databases) with</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">cernopendata</span><span class="o">/</span><span class="n">data</span><span class="o">-</span><span class="n">curation</span><span class="o">.</span><span class="n">git</span>
+<span class="n">cd</span> <span class="n">data</span><span class="o">-</span><span class="n">curation</span><span class="o">/</span><span class="n">cms</span><span class="o">-</span><span class="n">YYYY</span><span class="o">-</span><span class="n">simulated</span><span class="o">-</span><span class="n">datasets</span>
+<span class="n">python3</span> <span class="o">./</span><span class="n">code</span><span class="o">/</span><span class="n">interface</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="nb">print</span><span class="o">-</span><span class="n">categorisation</span> <span class="o">./</span><span class="n">inputs</span><span class="o">/</span><span class="n">CMS</span><span class="o">-</span><span class="mi">2015</span><span class="o">-</span><span class="n">mc</span><span class="o">-</span><span class="n">datasets</span><span class="o">.</span><span class="n">txt</span> <span class="o">&gt;</span> <span class="n">categorisation</span><span class="o">-</span><span class="mf">2015.</span><span class="n">md</span>
+</pre></div>
+</div>
+<p>This run the categorisation on the list of 2015 simulated datasets. The output file is in markdown format (and can be rendered e.g. by opening it in VS Code, by right-clicking on the editor tab and selecting <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">preview</span></code>.).</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -395,8 +387,6 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../codp/contributing.html" title="previous page">Contributing</a>
-    <a class='right-next' id="next-link" href="../use-od/open-data-examples.html" title="next page">Open data examples</a>
 
         </div>
         

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Release preparations &#8212; Getting started in DPOA</title>
+    <title>Behind the scenes &#8212; Getting started in DPOA</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -55,8 +55,6 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Open data examples" href="../use-od/open-data-examples.html" />
-    <link rel="prev" title="Contributing" href="../codp/contributing.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -207,12 +205,12 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../codp/finding-things.html">
+  <a class="reference internal" href="finding-things.html">
    Finding things
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../codp/contributing.html">
+  <a class="reference internal" href="contributing.html">
    Contributing
   </a>
  </li>
@@ -222,9 +220,9 @@
   Release preparations
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../releases/open-data-releases.html">
    Release preparations
   </a>
  </li>
@@ -302,7 +300,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/releases/open-data-releases.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/codp/behind-the-scenes.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -322,7 +320,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/cms-dpoa/cms-dpoa-getting-started/issues/new?title=Issue%20on%20page%20%2Freleases/open-data-releases.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/cms-dpoa/cms-dpoa-getting-started/issues/new?title=Issue%20on%20page%20%2Fcodp/behind-the-scenes.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -351,23 +349,15 @@
         
               <div>
                 
-  <div class="section" id="release-preparations">
-<h1>Release preparations<a class="headerlink" href="#release-preparations" title="Permalink to this headline">¶</a></h1>
-<p>The CMS open data are released through <a class="reference external" href="http://opendata.cern.ch/">the CMS open data portal</a>. The preparation consists of several steps:</p>
-<p><img alt="CMS data release preparations" src="../_images/cms-release-preparations.png" /></p>
+  <div class="section" id="behind-the-scenes">
+<h1>Behind the scenes<a class="headerlink" href="#behind-the-scenes" title="Permalink to this headline">¶</a></h1>
+<p>The dataset information is structured in JSON format. The underlying JSON information can be displayed on the browser by adding <code class="docutils literal notranslate"><span class="pre">/export/json</span></code> to the URL. As an example</p>
 <ul class="simple">
-<li><p>“Legacy” reprocessing is defined for the collision data and MC</p></li>
-<li><p>The data release is proposed for approval in the CMS Collaboration Board (CB)</p></li>
-<li><p>The datasets are transferred from their CMS storage to the open data area (eospublic at CERN)</p></li>
-<li><p>The metadata are extracted and parsed from the CMS-internal databases</p></li>
-<li><p>The condition data (needed for running the jobs) are extracted as sqlite files and stored on the cvmfs file system</p></li>
-<li><p>The computing environment (containers and VM image) is preserved and tested</p></li>
-<li><p>Auxiliar information (list of good runs, luminosity information etc) is collected</p></li>
-<li><p>Testing in the open data environment</p></li>
-<li><p>Documentation for data usage and tools.</p></li>
+<li><p><a class="reference external" href="http://opendata.cern.ch/record/7762">a portal record of a simulated file</a></p></li>
+<li><p><a class="reference external" href="http://opendata.cern.ch/record/7762/export/json">the underlying JSON</a></p></li>
 </ul>
-<p>Based on this information, the open data portal records are prepared:</p>
-<p><img alt="CODP data release preparations" src="../_images/codp-release-preparations.png" /></p>
+<p>The JSON files are recorded in the open data portal github area in the <a class="reference external" href="https://github.com/cernopendata/opendata.cern.ch/tree/master/cernopendata/modules/fixtures/data/records">records subfolder</a>.</p>
+<p>The structure of the JSON information is defined in the schema definition <a class="reference external" href="https://github.com/cernopendata/opendata.cern.ch/blob/master/cernopendata/jsonschemas/records/record-v1.0.0.json">record-v1.0.0.json</a>.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -383,7 +373,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./releases"
+            path: "./codp"
         },
         predefinedOutput: true
     }
@@ -395,8 +385,6 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../codp/contributing.html" title="previous page">Contributing</a>
-    <a class='right-next' id="next-link" href="../use-od/open-data-examples.html" title="next page">Open data examples</a>
 
         </div>
         
