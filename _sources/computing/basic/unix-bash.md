@@ -11,8 +11,7 @@ To do:
   - Unix shell and bash scripts: [http://swcarpentry.github.io/shell-novice/](http://swcarpentry.github.io/shell-novice/) or [https://missing.csail.mit.edu/2020/course-shell/](https://missing.csail.mit.edu/2020/course-shell/) + [https://missing.csail.mit.edu/2020/shell-tools/](https://missing.csail.mit.edu/2020/shell-tools/)
 - some editors basics
   - [https://missing.csail.mit.edu/2020/editors/](https://missing.csail.mit.edu/2020/editors/) running in terminal
-  - VS Code
-  - ...
+  - [VS Code](https://code.visualstudio.com/)
 
 
 
